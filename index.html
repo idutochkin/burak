@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
+		<link rel="preload" href="fonts/CeraPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/CeraPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/Zhizn.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="style.css">
+		
+		<title>Сердце щедрого вторника | Дорога жизни</title>
+	</head>
+	<body>
+		<div class="bg cloud-1"></div>
+		<div class="bg cloud-2"></div>
+		<div class="bg girl"></div>
+		<div class="bg-wrapper">
+			<header class="flex flex-between">
+				<div>
+					<a href="#" class="color-blue big-text bold">Что такое<br>#ЩедрыйВторник?</a>
+				</div>
+				<div class="flex gap30">
+					<a href="/"><img src="images/heart.svg" alt="Сердце щедрого вторника"></a>
+					<a href="https://doroga-zhizni.org/" target="_blank"><img src="images/doroga-zhizni.png" alt="Благотворительный фонд Дорога жизни"></a>
+				</div>
+				<div class="flex flex-column flex_items-right">
+					<a href="tel:+7 499 381 79 75" class="color-blue big-text bold">+7 499 381 79 75</a>
+					<a href="mailto:fond@doroga-zhizni.org">fond@doroga-zhizni.org</a>
+				</div>
+			</header>
+			<main class="flex flex-between">
+				<div class="heart-block_wrapper">
+					<div>
+						<div class="big-text">Вместе, как <b class="color-red">единое сердце</b></div>
+						<div>
+							<a href="https://www.instagram.com/explore/tags/СердцеЩедрогоВторника/" target="_blank" class="hashtag"><span class="color-red">#Сердце</span><span class="color-blue">ЩедрогоВторника</span></a>
+							<a href="#" class="reload js-reload"></a>
+						</div>
+					</div>
+					<div class="heart-block">
+						<canvas id="canvas"></canvas>
+					</div>
+				</div>
+				<div class="join-block_wrapper">
+					<div class="join-block flex flex-column flex_items-center flex-center gap10">
+						<div class="bg boy"></div>
+						<div>
+							<div>Уже поддержали</div>
+							<div class="big-text join-num color-blue" style="line-height:130%;margin-top:5px">356</div>
+						</div>
+						<div>
+							<a href="#" class="join-us"></a>
+							<a href="#">Участники акции</a>
+						</div>
+					</div>
+					<div class="join-steps">
+						<div class="step">
+							<div class="step-name color-blue big-text"><span class="join-num">1</span> шаг</div>
+							<div class="step-description">Сделайте<br>пожертвование</div>
+						</div>
+						<div class="step">
+							<div class="step-name color-blue big-text"><span class="join-num">2</span> шаг</div>
+							<div class="step-description">Загрузите свою<br>фотографию</div>
+						</div>
+						<div class="step">
+							<div class="step-name color-blue big-text"><span class="join-num">3</span> шаг</div>
+							<div class="step-description">Поделитесь<br>в соц. сетях</div>
+						</div>
+						<div class="step">
+							<div class="step-name color-blue big-text"><span class="join-num">4</span> шаг</div>
+							<div class="step-description">Ищите своё<br>фото на сайте</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="flex flex-between">
+				<div class="flex flex-column gap10">
+					<div>&copy; «Дорога Жизни» 2020 г.</div>
+					<a href="#" class="color-blue">Публичная оферта о добровольном пожертвовании</a>
+				</div>
+				<div class="flex flex_items-center gap25">
+					<div class="color-blue">Сделано<br>с любовью</div>
+					<a href="#" target="_blank"><img src="images/iskra-studio.svg" alt="Искра full digital studio"></a>
+				</div>
+			</footer>
+		</div>
+	
+		<script src="heart.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
