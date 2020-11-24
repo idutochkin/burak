@@ -42,7 +42,25 @@
 		margin-left: 0;
 	}
 	.join-block {
-		margin: 150px auto;
+		background: none;
+		margin: 100px auto;
+		height: auto;
+	}
+	.bg {
+		background-size: cover;
+	}
+	.join-us-num {
+		display: flex;
+	}
+	.join-us-num_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-right: 15px;
+	}
+	.join-steps {
+		margin: auto;
 	}
 }
 
@@ -58,4 +76,97 @@
 	.about, .contacts {
 		display: none;
 	}
+	.bg-wrapper {
+		padding: 20px;
+	}
+	header.flex {
+		display: block;
+	}
+	.mobile-menu-open {
+		display: block;
+	}
+	.logo_heart img {
+		width: 30px;
+		height: 28px;
+	}
+	.logo_dorogazhizni img {
+		width: 88px;
+		height: 24px;
+	}
+	.logo_heart {
+		position: absolute;
+		left: calc(50% - 15px);
+	}
+	main {
+		margin: 50px 0;
+	}
+	.hashtag {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.heart-h2 {		
+		font-size: 16px;
+		line-height: 20.8px;
+	}	
+	.heart-h2 .reload {
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		background-size: contain;
+		margin-left: 20px;
+		top: 7px;
+	}
+	.heart-h1 .reload {
+		display: none;
+	}
+	.heart-block {
+		margin-top: 40px;
+	}
+	.boy {
+		display: block;
+		width: 75px;
+		height: 121px;
+		margin-top: -230px;
+	}
+	footer.flex.flex-between {
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.iskra-studio {
+		justify-content: center;
+		margin-top: 25px;
+	}
+	.join-block {
+		margin: 75px auto 100px;
+	}
+	.heart-block_wrapper {
+		height: 400px;
+	}
+}
+
+@media (max-width: 500px) {
+	/*.join-block {
+		margin: -25px auto 50px;
+	}*/
+}
+
+@media (max-width: 467px) {
+	.heart-block_wrapper {
+		height: 350px;
+	}
+	/*.join-block {
+		margin: -125px auto 50px;
+	}*/
+}
+
+@media (max-width: 400px) {
+	.heart-block_wrapper {
+		height: 320px;
+	}
+	/*.join-block {
+		margin: -150px auto 50px;
+	}*/
 }

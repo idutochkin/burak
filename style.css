@@ -131,6 +131,9 @@ main {
     width: 100%;
     margin-top: 50px;
 }
+.join-block_wrapper {
+	margin-top: 25px;
+}
 .join-block {
     background-image: url(images/cloud-3.png);
     background-size: contain;
@@ -179,4 +182,73 @@ footer {
 	position: absolute;
     bottom: 25px;
     width: calc(100% - 164px);
+}
+.mobile-menu-open {
+	background-image: url("images/menu.svg");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+.mobile-menu-close {
+	background-image: url("images/close.svg");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+.mobile-wrapper {
+	justify-content: space-between;
+}
+.heart-h2 .reload {
+	display: none;
+}
+.mobile-menu_wrapper {
+    display: none;
+	opacity: 0;
+	transition: opacity .25s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: 9;
+}
+.mobile-menu_header {
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+.mobile-menu_content {
+	padding: 20px;
+}
+.mobile-menu_wrapper.active {
+	opacity: 1;
+	transition: opacity .25s ease;
+}
+.mobile-menu_content .big-text {
+	font-size: 16px;
+	line-height: 20.8px;
+}
+.mobile-menu_content .girl {
+    display: block;
+    height: 149px;
+    width: 105px;
+    background-size: 105px 149px;
+    position: absolute;
+    right: 20px;
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+	z-index: 9;
+	display: none;
+	opacity: 0;
+	transition: opacity .25s ease;
+}
+.overlay.active {
+	opacity: 1;
+	transition: opacity .25s ease;
 }
