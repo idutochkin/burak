@@ -2,6 +2,13 @@
   /* All screens larger than 1920px */
 }
 
+@media (min-width: 768px) {
+	/* All screens larger than 768px */
+	.gap30 a{
+		margin-right: 20px;
+	}
+}
+
 @media (max-width: 1920px) {
   /* 1920px screen and all screens smaller */
 }
