@@ -8,6 +8,11 @@
 		margin-right: 20px;
 	}
 }
+@media (min-height: 900px) {
+	.girl {
+		right: 38%;
+	}
+}
 
 @media (max-width: 1920px) {
   /* 1920px screen and all screens smaller */
@@ -36,6 +41,16 @@
 	main {
 		gap: 150px;
 	}
+	.popup-close {
+		display: block;
+		top: 6%;
+		right: 4%;
+		height: 32px;
+    width: 32px;
+	}
+	.popup-close__image{
+		height: 100%;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -52,6 +67,7 @@
 		background: none;
 		margin: 100px auto;
 		height: auto;
+		width: auto;
 	}
 	.bg {
 		background-size: cover;
@@ -91,7 +107,7 @@
 		display: none;
 	}
 	.bg-wrapper {
-		padding: 20px;
+		padding: 20px 15px;
 	}
 	header.flex {
 		display: block;
@@ -159,6 +175,13 @@
 	.heart-block_wrapper {
 		height: 400px;
 	}
+	.popup-image {
+		display: none;
+	}
+	.popup-box {
+    max-width: initial;
+    padding: 50px 30px;
+	}	
 }
 
 @media (max-width: 500px) {
@@ -183,16 +206,80 @@
 	/*.join-block {
 		margin: -150px auto 50px;
 	}*/
+	.popup-content {
+		border-radius: 10%;
+	}
 }
 
-@media (max-height: 900px) {
-	.join-steps {
-		margin-top: 30px;
-	}
+@media (max-height: 900px) and (min-width: 1024px) {
 	main {
 		margin: 50px 0;
 	}
+	.bg-wrapper {
+		padding: 20px 82px;
+	}
+	.join-steps {
+		margin-top: 30px;
+	}	
 	.heart-block {
-		height: calc(100% - 100px);
+		height: calc(100% - 150px);
+	}
+	.join-block {
+		height: 280px;
+	}
+	.girl {
+		height: 240px;
+	}
+}
+
+/* form page style */
+
+@media (max-width: 1024px) {
+	.form{
+		display: flex !important;
+		flex-wrap: wrap;
+	}
+	.form__column_right{
+		padding: 0;
+		padding-bottom: 60px;
+		margin-bottom: 40px;
+		order: -1;
+	}
+	.form__column{
+		width: 100%;
+		max-width: 500px;
+		text-align: center;
+	}
+	.form__logos {
+		justify-content: center;
+	}
+	.form__text {
+		max-width: 500px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.form__title {
+		font-size: 20px;
+		line-height: 130%;
+	}
+	.form__radio{
+		width: 80px;
+	}
+	.form__radio svg{
+		width: 80px;
+	}
+	.form__column{
+		max-width: 400px;
+	}
+	.form__submit-block {
+		margin-top: 30px;
+	}
+	.form__submit {
+		height: 45px;
+	}
+	.form__submit-bg {
+		height: 45px;
 	}
 }
