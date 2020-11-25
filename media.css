@@ -184,3 +184,15 @@
 		margin: -150px auto 50px;
 	}*/
 }
+
+@media (max-height: 900px) {
+	.join-steps {
+		margin-top: 30px;
+	}
+	main {
+		margin: 50px 0;
+	}
+	.heart-block {
+		height: calc(100% - 100px);
+	}
+}
