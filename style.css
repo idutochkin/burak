@@ -17,10 +17,24 @@ body {
 }
 a {
 	color: #444448;
-	text-decoration: none;
+    text-decoration: none;
+    position: relative;
 }
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+}
+.underline::before {
+    border-bottom: 1px solid #444448;
+    transition: all 2s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    bottom: -2px;
+}
+.underline:hover::before {
+    width: 100%;
 }
 .bg-wrapper {
 	padding: 25px 82px;
@@ -122,7 +136,7 @@ main {
 	margin-left: 50px;
 }
 .heart-block {
-    background-image: url(images/heart-big.svg);
+    background-image: url(images/another_heart.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
@@ -147,15 +161,38 @@ main {
 	font-size: 50px;
 	font-family: 'Zhizn';
 }
-.join-us {
+.join-us{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.join-us-link {
     background-image: url(images/join-us.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
     width: 183px;
     height: 55px;
-	margin: 20px 0 15px;
+    margin: 20px 0 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F73E49;
 }
+/* .join-us-link::after {
+    background-color: #F73E49;
+    border-radius: 40%;
+    position: absolute;
+    content: '';
+    height: 55px;
+    top: 0;
+	left: 0;
+    width: 0;
+    transition: all 2s ease;
+    z-index: -1;
+}
+.join-us-link:hover::after {
+	width: 100%;
+} */
 .boy {
     background-image: url(images/boy.png);
     top: auto;
