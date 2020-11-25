@@ -1,4 +1,30 @@
-(async function () {
+/*const imageURLs = [
+	'https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1561948955-570b270e7c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1503431128871-cd250803fa41?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80',
+	'https://images.unsplash.com/photo-1536500152107-01ab1422f932?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80'
+];
+console.log(document.querySelector(".heart-block").clientWidth+" - "+document.querySelector(".heart-block").clientHeight);
+imageURLs.forEach(function(src, index) {
+	var img = document.createElement("img");
+	img.setAttribute("src", src);
+	img.onload = function() {
+		var width = this.width;
+		var hight = this.height;
+		console.log(width+"/"+hight);
+	}
+	
+	//document.querySelector(".heart-block").appendChild(img);
+	
+});*/
+
+/*(async function () {
   const heartPath = new Path2D('M535.38,56.82C508.88,28.07,472.51,12.24,433,12.24c-29.55,0-56.62,9.35-80.45,27.77A164.79,164.79,0,0,0,320,74a164.56,164.56,0,0,0-32.53-34C263.65,21.59,236.58,12.24,207,12.24c-39.54,0-75.91,15.83-102.42,44.58C78.43,85.23,64,124,64,166.11c0,43.3,16.14,82.94,50.78,124.75,31,37.39,75.54,75.35,127.12,119.31,17.61,15,37.58,32,58.31,50.15a30.06,30.06,0,0,0,39.58,0c20.73-18.13,40.7-35.15,58.32-50.17,51.58-44,96.12-81.91,127.11-119.31C559.87,249.05,576,209.41,576,166.11,576,124,561.57,85.23,535.38,56.82Z');
   
   const viewBox = [document.getElementById("canvas").parentElement.clientWidth, document.getElementById("canvas").parentElement.clientHeight - 50];
@@ -23,7 +49,7 @@
 
   const W = document.getElementById("canvas").parentElement.clientWidth;
   const H = document.getElementById("canvas").parentElement.clientHeight - 50;
-  const S = 40;
+  const S = 50;
 
   canvas.width = W;
   canvas.height = H;
@@ -229,4 +255,4 @@ function loadImg(src) {
 
 function lerp(v0, v1, t) {
   return v0 * (1 - t) + v1 * t;
-}
+}*/
