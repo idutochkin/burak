@@ -317,6 +317,10 @@ footer {
     width: 185px;
     height: 57px;
   }
+#popup-svg {
+    width: 100%;
+}
+  
 .popup {
     position: fixed;
     width: 100%;
@@ -339,24 +343,10 @@ footer {
     align-items: center;
     position: relative;
 }
-.popup-content {
-    background-image: url("images/cloud-popup.png");
-    background-color: #fff;
-    color: #444448;
-    max-width: 820px;
-    max-height: 580px;
-    display: flex;
-    border-radius: 20%;
-    overflow: hidden;
-    z-index: 2;
-    position: relative;
-    width: 100%;
-    margin: 80px 15px;
-}
 .popup-close {
     position: absolute;
-    top: 14%;
-    right: 18%;
+    top: 0;
+    right: -40px;
 }
 .popup-area {
     position: absolute;
@@ -369,14 +359,18 @@ footer {
 .popup-box {
     max-width: 400px;
     padding: 130px 85px;
-}
-/* .popup-text {
-    width: 100%;
-    max-width: 400px;
-} */
-.popup-image {
     position: absolute;
-    right: -50px;
+}
+.popup-container {
+    z-index: 1;
+    max-width: 820px;
+    max-height: 580px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
 }
 
 /* form style */
