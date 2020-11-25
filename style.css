@@ -13,7 +13,8 @@ body {
 	font-family: 'CeraPro-Regular';
 	color: #444448;
 	position: relative;
-	min-height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 a {
 	color: #444448;
@@ -263,6 +264,7 @@ footer {
 .copyright {
     opacity: 0.7;
 }
+
 .btn-text {
     position: absolute;
     top: 0;
@@ -315,3 +317,200 @@ footer {
     width: 185px;
     height: 57px;
   }
+
+/* form style */
+.form{
+    padding-top: 35px;
+    align-items: center;
+    gap: 0;
+}
+    
+.form__column {
+    width: 50%; 
+    max-width: 505px;
+   
+}
+.form__column_right {
+    max-width: 400px;
+    padding: 85px 77px 85px 107px;
+    background: url(images/bg-form1.jpg) no-repeat center center /contain;
+}
+
+.form__heart {
+    margin: 0 auto 50px;
+    max-width: 100%;
+}
+.form__text {
+    display: block;
+    max-width: 465px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #444448;
+    text-align: left;
+}
+.form__text_last {
+    margin-bottom: 30px;
+}
+
+.form__cloud1 {
+    background-image: url(images/bg-form1.jpg);
+}
+.form__cloud2 {
+    background-image: url(images/bg-form2.jpg);
+    background-position: bottom right;
+	top: auto;
+}
+.form__title {
+    display: block;
+    margin-bottom: 40px;
+    font-family: Zhizn;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #376EB3;
+}
+.form__logos{
+    display: flex;
+    align-items: center;
+}
+.form__logo {
+    margin-right: 23px;
+}
+.form__radios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.form__radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    font-family: CeraPro-Regular;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #F73E49;
+    cursor: pointer;
+}
+.form__radio:not(:last-child) {
+    margin-right: 20px;
+}
+.form__radio input{
+    display: none;
+}
+.form__radio-svg{
+    position: absolute;
+}
+.form__radio input:checked ~ .form__radio-svg{
+    fill: #F73E49
+}
+.form__radio input:checked ~ .form__radio-text{
+    position: relative;
+    z-index: 2;
+    color: #fff
+}
+.form__input-label {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+.form__input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #444448;
+    font-size: 16px;
+    line-height: 130%;
+    color: #444448;
+    background: none;
+    opacity: 0.5;
+}
+.form__input-text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form__input:focus ~ .form__input-text {
+    display: none;
+}
+
+.form__checkbox {
+    display: none;
+}
+.form__checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.form__checkbox-kastom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form__checkbox:checked ~ .form__checkbox-kastom::before {
+    content: url(images/check.png);
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+.form__checkbox-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #444448;
+    opacity: 0.5;
+}
+.form__checkbox-link{
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+.form__checkbox-link:hover{
+    text-decoration: none;
+    border-bottom: 1px solid  #444448;
+    transition: 0.3s;
+}
+.form__submit-block {
+    margin-top: 40px;
+    position: relative;
+}
+.form__submit-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.form__submit {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 57px;
+    outline: none;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #376EB3;
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield; 
+}
