@@ -8,6 +8,11 @@
 		margin-right: 20px;
 	}
 }
+@media (min-height: 900px) {
+	.girl {
+		right: 38%;
+	}
+}
 
 @media (max-width: 1920px) {
   /* 1920px screen and all screens smaller */
@@ -183,4 +188,25 @@
 	/*.join-block {
 		margin: -150px auto 50px;
 	}*/
+}
+
+@media (max-height: 900px) {
+	main {
+		margin: 50px 0;
+	}
+	.bg-wrapper {
+		padding: 20px 82px;
+	}
+	.join-steps {
+		margin-top: 30px;
+	}	
+	.heart-block {
+		height: calc(100% - 150px);
+	}
+	.join-block {
+		height: 280px;
+	}
+	.girl {
+		height: 240px;
+	}
 }
