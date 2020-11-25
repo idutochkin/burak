@@ -41,6 +41,16 @@
 	main {
 		gap: 150px;
 	}
+	.popup-close {
+		display: block;
+		top: 6%;
+		right: 4%;
+		height: 32px;
+    width: 32px;
+	}
+	.popup-close__image{
+		height: 100%;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -165,6 +175,13 @@
 	.heart-block_wrapper {
 		height: 400px;
 	}
+	.popup-image {
+		display: none;
+	}
+	.popup-box {
+    max-width: initial;
+    padding: 50px 30px;
+	}	
 }
 
 @media (max-width: 500px) {
@@ -189,6 +206,9 @@
 	/*.join-block {
 		margin: -150px auto 50px;
 	}*/
+	.popup-content {
+		border-radius: 10%;
+	}
 }
 
 @media (max-height: 900px) and (min-width: 1024px) {
