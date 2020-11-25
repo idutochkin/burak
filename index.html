@@ -9,6 +9,7 @@
 		<link rel="preload" href="fonts/Zhizn.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="media.css">
+		<link rel="stylesheet" href="heart.css">
 		
 		<title>Сердце щедрого вторника | Дорога жизни</title>
 	</head>
@@ -60,7 +61,32 @@
 						</div>
 					</div>
 					<div class="heart-block">
-						<canvas id="canvas"></canvas>
+						<!--left-top-->
+						<div class="square x2"></div>
+						<div class="square x3"></div>
+						<div class="square x3"></div>
+						<!--left-middle-->
+						<div class="square x3"></div>
+						<div class="square x3"></div>
+						<div class="square x6"></div>
+						<div class="square x4"></div>
+						<div class="square x1"></div>
+						<div class="square x1"></div>
+						<div class="square x1"></div>
+						<div class="square x3"></div>
+						<div class="square x3"></div>
+						<div class="square x5"></div>
+						<div class="square x5"></div>
+						<div class="square x5"></div>
+						<!--left-bottom-->
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<!--right-middle-->
+						<!--canvas id="canvas"></canvas-->
 					</div>
 				</div>
 				<div class="join-block_wrapper">
@@ -70,9 +96,29 @@
 							<div class="join-us-num_text"><span>Уже</span> <span>поддержали</span></div>
 							<div class="big-text join-num color-blue" style="line-height:130%;margin-top:5px">356</div>
 						</div>
-						<div>
-							<a href="#" class="join-us"></a>
-							<a href="#">Участники акции</a>
+						<div >
+							<!-- <div class="join-us"><a href="#" class="join-us-link">Присоединиться</a></div> -->
+							<div class="join-us"><a href="#" class="join-us-link">
+								<div class="container">
+									<div class="btn-text">
+										Присоединиться
+									</div>
+									<svg id="main-svg" width="185" height="57" viewBox="0 0 185 57" xmlns="http://www.w3.org/2000/svg" >
+										<clipPath   id="myMask" width="185" height="57">
+											<path  width="185" height="57" d="M148.7,5.7C56-0.3,23.4,3.2,10.9,12.2C-3.7,22.6-4.1,47,23.1,51.2c27.5,4.2,122.7,9.3,148.5-2.3
+									c13.1-5.9,14.9-16.9,9.7-24.6c-4.8-7.3-8.3-11.7-32.4-18.5L148.7,5.7z"  />
+									</clipPath>
+										<g clip-path="url(#myMask)">
+											<path width="200" height="57" class="round-inner" d="M0,57h179.8c11.8-4.2,20.2-15.5,20.2-28.7c0-12.8-7.9-23.7-19.1-28.3H0V57z" />
+										</g>
+								
+										<path class="btn-outer-path" d="M175.483 7.50456C62.0609 -0.858445 24.5781 2.39383 10.9479 12.1507C-3.71146 22.6443 -4.14253 46.9965 23.1177 51.178C50.6645 55.4035 145.789 60.4702 171.589 48.855C184.732 42.9377 186.451 31.9783 181.324 24.2306C175.483 15.403 171.589 10.7568 130.698 1" stroke="#F73E49" stroke-width="2" stroke-linecap="round" fill="none" />
+										
+									</svg>
+									
+								</div>
+							</a></div>
+							<a class="underline" href="#">Участники акции</a>
 						</div>
 					</div>
 					<div class="join-steps">
@@ -97,7 +143,7 @@
 			</main>
 			<footer class="flex flex-between">
 				<div class="copyright flex flex-column gap10">					
-					<a href="#">Публичная оферта о добровольном пожертвовании</a>
+					<a class="underline" href="#">Публичная оферта о добровольном пожертвовании</a>
 				</div>
 				<div class="iskra-studio flex flex_items-center gap25">
 					<div class="color-blue">&copy; «Дорога Жизни» 2020 г.</div>
