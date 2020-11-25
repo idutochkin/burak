@@ -57,6 +57,7 @@
 		background: none;
 		margin: 100px auto;
 		height: auto;
+		width: auto;
 	}
 	.bg {
 		background-size: cover;
@@ -96,7 +97,7 @@
 		display: none;
 	}
 	.bg-wrapper {
-		padding: 20px;
+		padding: 20px 15px;
 	}
 	header.flex {
 		display: block;
@@ -190,7 +191,7 @@
 	}*/
 }
 
-@media (max-height: 900px) {
+@media (max-height: 900px) and (min-width: 1024px) {
 	main {
 		margin: 50px 0;
 	}
