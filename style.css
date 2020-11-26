@@ -413,7 +413,10 @@ footer {
     align-items: center;
     gap: 0;
 }
-
+.form__cloud {
+    background-image: url(images/top.png);
+    background-size: 50% 50%;
+}
 .form__column {
     width: 50%;
     max-width: 505px;
@@ -443,14 +446,6 @@ footer {
     margin-bottom: 30px;
 }
 
-.form__cloud1 {
-    background-image: url(images/bg-form1.jpg);
-}
-.form__cloud2 {
-    background-image: url(images/bg-form2.jpg);
-    background-position: bottom right;
-	top: auto;
-}
 .form__title {
     display: block;
     margin-bottom: 40px;
@@ -608,6 +603,12 @@ input[type=number] {
     padding-top: 35px;
     align-items: center;
     gap: 0;
+}
+.thanks__cloud {
+    background-image: url(images/top.png);
+}
+.thanks__cloud-bottom, .form__cloud-bottom {
+    background: url(images/bottom.png) no-repeat bottom left;
 }
 .thanks__title {
     display: block;
