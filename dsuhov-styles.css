@@ -407,3 +407,26 @@
 
   transition: color 0.3s linear;
 }
+
+/* ---------------------------------------------------------------------------------*/
+/* footer */
+.ds_footer__link {
+  display: inline-block;
+  position: relative;
+}
+
+.ds_footer__link::before {
+  height: 1px;
+  background-color: #444448;
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  /* z-index: 0; */
+  bottom: -2px;
+}
+
+.ds_footer__link:hover::before {
+  width: 100%;
+}
