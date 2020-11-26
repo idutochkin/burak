@@ -14,6 +14,12 @@ var closeMenu = () => {
 		document.querySelector(".overlay").style.display = "none";
 	}, 250);
 };
+var secondPause = function(e) {
+	e.preventDefault();
+	setTimeout(() => {
+		window.location = this.href
+	}, 1000);
+}
 
 document.querySelectorAll(".js-open-menu").forEach((node, index) => {
 	node.addEventListener("click", openMenu);
@@ -23,4 +29,7 @@ document.querySelectorAll(".js-close-menu").forEach((node, index) => {
 });
 document.querySelectorAll(".overlay").forEach((node, index) => {
 	node.addEventListener("click", closeMenu);
+});
+document.querySelectorAll(".js-second-pause").forEach((node) => {
+	node.addEventListener("click", secondPause);
 });

@@ -121,7 +121,7 @@
 						</div>
 						<div >
 							<!-- <div class="join-us"><a href="#" class="join-us-link">Присоединиться</a></div> -->
-							<div class="join-us"><a href="pages/form.html" class="join-us-link">
+							<div class="join-us"><a href="pages/form.html" class="join-us-link js-second-pause">
 								<div class="container">
 									<div class="btn-text">
 										Присоединиться
@@ -141,7 +141,25 @@
 									
 								</div>
 							</a></div>
-							<a class="underline" href="pages/gallery.html">Участники акции</a>
+
+							<div>
+								<div class="container-participants">
+									<a href="pages/gallery.html" class="participants-text">
+										Участники акции
+									</a>
+									
+									<svg id="offer-svg" height="4" viewBox="0 0 130 4" xmlns="http://www.w3.org/2000/svg" >
+										<clipPath   id="offerMask" height="4">
+											<path height="4" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
+										</clipPath>
+										<g clip-path="url(#offerMask)">
+											<path width="185" height="4" class="round-inner-offer" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
+										</g>
+									</svg>
+									
+								</div>
+							</div>
+							<!-- <a class="underline" href="pages/gallery.html">Участники акции</a> -->
 						</div>
 					</div>
 					<div class="join-steps">
@@ -165,27 +183,18 @@
 				</div>
 			</main>
 			<footer class="flex flex-between">
+
 				<div>
 					<div class="container-offer">
-						<!-- Абсолютно позиционированный блок с текстом. Центрирование по вкусу. -->
-						<div class="offer-text">
+						<a href="https://doroga-zhizni.org/upload_files/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D1%8B.pdf" class="offer-text">
 							Публичная оферта о добровольном пожертвовании
-						</div>
+						</a>
 						
 						<svg id="offer-svg" height="4" viewBox="0 0 408 4" xmlns="http://www.w3.org/2000/svg" >
-							<!-- Атрибут, в который записывается фигура, служащая "маской" -->
 							<clipPath   id="offerMask" height="4">
-								<!-- В данном случае это замкнутая фигура, повторяющая контуры "а-ля рисунок от руки", фигура та же, 
-					только обрезаны "хвостики" -->
-								
 								<path height="4" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
 							</clipPath>
-							
-							<!-- тег g, в svg служит для группировки, в данном случае ему задаётся адрес "маски"  -->
 							<g clip-path="url(#offerMask)">
-								<!-- фигура, которая будет "под маской" - всё внутри маски видно, за её пределами - обрезается.
-								в данном случае блок, который катается влево-вправо
-								-->
 								<path width="400" height="4" class="round-inner-offer" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
 							</g>
 						</svg>
