@@ -1,3 +1,61 @@
+var imagesSrc = [
+	"upload/1.jpg",
+	"upload/1.jpg",
+	"upload/3.jpg",
+	"upload/4.jpg",
+	"upload/5.jpg",
+	"upload/6.jpg",
+	"upload/7.jpg",
+	"upload/8.jpg",
+	"upload/9.jpg",
+	"upload/10.jpg",
+	"upload/11.jpg",
+	"upload/12.jpg",
+	"upload/13.jpg",
+	"upload/14.jpg",
+	"upload/15.jpg",
+	"upload/16.jpg",
+	"upload/17.jpg",
+	"upload/18.jpg",
+	"upload/19.jpg",
+	"upload/20.jpg",
+	"upload/21.jpg",
+	"upload/22.jpg",
+	"upload/23.jpg",
+	"upload/24.jpg",
+	"upload/25.jpg",
+	"upload/26.jpg",
+	"upload/27.jpg",
+	"upload/28.jpg",
+	"upload/29.jpg",
+	"upload/30.jpg",
+	"upload/31.jpg",
+	"upload/32.jpg",
+	"upload/33.jpg",
+	"upload/34.jpg",
+	"upload/35.jpg",
+	"upload/36.jpg",
+	"upload/37.jpg",
+	"upload/38.jpg",
+	"upload/39.jpg",
+	"upload/40.jpg",
+	"upload/41.jpg"
+];
+var fullImages = [];
+console.log(imagesSrc);
+imagesSrc.forEach(function(src, index) {
+	var squareEmpty = document.querySelector(".heart-block .square:not([data-not-empty])");
+	var img = document.createElement("img");
+	
+	img.setAttribute("src", src);	
+	squareEmpty.appendChild(img);
+	squareEmpty.dataset.notEmpty = "y";
+	
+	fullImages.push(src);
+});
+console.log(fullImages);
+console.log(imagesSrc);
+
 /*const imageURLs = [
 	'https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
 	'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80',
