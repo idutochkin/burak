@@ -93,3 +93,17 @@ document.querySelectorAll(".js-reloadHeart").forEach((node, index) => node.addEv
 	event.preventDefault();
 	renderHeart(imagesSrc);
 }));
+document.querySelectorAll(".square").forEach((node, index) => node.addEventListener("click", (event) => {
+	event.preventDefault();
+	
+	let popupImage = document.querySelector(".popupImage_inner");
+	popupImage.innerHTML = "";
+	let img = document.createElement("img");
+	img.setAttribute("src", node.querySelector("img").getAttribute("src"));
+	popupImage.appendChild(img);
+	
+	showElement(".popupImage");
+}));
+document.querySelector(".popupImage").addEventListener("click", (event) => {
+	hideElement(".popupImage");
+});
