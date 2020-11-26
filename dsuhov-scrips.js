@@ -8,4 +8,12 @@ window.document.addEventListener("DOMContentLoaded", function () {
     photoEL.src = imgUrl;
     downlEl.setAttribute("href", imgUrl);
   }
+
+  var shareItems = document.querySelectorAll(".social_share");
+  JSShare.options.url = "https://generous-tuesday.labado.bizml.ru/";
+  for (var i = 0; i < shareItems.length; i += 1) {
+    shareItems[i].addEventListener("click", function share(e) {
+      return JSShare.go(this);
+    });
+  }
 });
