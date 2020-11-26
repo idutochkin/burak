@@ -1,6 +1,6 @@
 const API_URL = "https://generous-tuesday.labado.bizml.ru/api/v1"
 
-async function request(url = '', method = 'GET', data = {}, ) {
+function request(url = '', method = 'GET', data = {}, ) {
   const params = {
     method: method, // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -16,7 +16,10 @@ async function request(url = '', method = 'GET', data = {}, ) {
   if(method !== "GET"){
     params.body = JSON.stringify(data)
   }
-  const response = await fetch(`${API_URL}/${url}`, params);
-  
-  return response.json(); // parses JSON response into native JavaScript objects
+  return fetch(`${API_URL}/${url}`, params)
+    .then(function (response) {
+        return response.json();
+    }).catch(function (error) {
+        console.log(error)
+    });
 }
