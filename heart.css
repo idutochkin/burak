@@ -1,5 +1,5 @@
 .heart-block {position:relative}
-.heart-block .square {position:absolute;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;box-sizing: border-box;border:1px solid}
+.heart-block .square {position:absolute;display:grid;grid-template-columns:100%;grid-template-rows:100%;box-sizing:border-box}
 .heart-block .square:after {content:"";padding-bottom:100%}
 .heart-block img {width:100%;height:100%;display:block}
 
