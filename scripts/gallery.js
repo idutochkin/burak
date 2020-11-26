@@ -1,10 +1,8 @@
 
 
-renderGallery();
+fetchGalleryItems();
 
-async function renderGallery(){
-  const galleryItems = await fetchGalleryItems();
-
+function renderGallery(galleryItems){
   const galleryContent = document.querySelector(".gallery__content");
 
   if(!galleryItems.length){
@@ -122,12 +120,11 @@ function chunk(arr, size) {
   return result
 }
 
-async function fetchGalleryItems(){
-  try {
-    const galleryItems = await request("donations");
-
-    return galleryItems;
-  } catch (error) {
-    console.log(error);
-  }
+function fetchGalleryItems(){
+    request("donations")
+      .then(function(response){
+        renderGallery(response)
+      }).catch(function (error) {
+        console.log(error);
+      });
 }
