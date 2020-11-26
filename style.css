@@ -389,7 +389,8 @@ footer {
 .form__column_right {
     max-width: 400px;
     padding: 85px 77px 85px 107px;
-    background: url(images/bg-form1.jpg) no-repeat center center /contain;
+    margin-left: 40px;
+    background: url(images/bg-form3-2.png) no-repeat center center /100% 100%;
 }
 
 .form__heart {
@@ -505,6 +506,8 @@ footer {
 .form__checkbox-label {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    text-align: left;
 }
 .form__checkbox-kastom {
     position: relative;

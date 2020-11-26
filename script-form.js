@@ -46,7 +46,7 @@ function handleForm() {
     }
   });
 
-  this.pay = async function () {
+  const pay = async function () {
     const donation = await fetch(
       "https://generous-tuesday.labado.bizml.ru/api/v1/donations",
       {
@@ -62,14 +62,14 @@ function handleForm() {
     )
       .then((response) => response.json())
       .catch((err) => console.log(err));
-
-    var widget = new cp.CloudPayments();
+        
+      const widget = new cp.CloudPayments()
     widget.pay(
       "auth", // или 'charge'
       {
         //options
-        publicId: donation.id, //id из личного кабинета
-        description: "Оплата товаров в example.com", //назначение
+        publicId: 'pk_5571843ab94c9ab9adcf23ff59560', //id из личного кабинета
+        description: "Пожертвование в благотворительный фонд 'Дорога Жизни'", //назначение
         amount: getAmount() ? +getAmount() : parseFloat(+otherAmount.value), //сумма
         currency: "RUB", //валюта
         invoiceId: donation.cloudPaymentsInvoiceId, //номер заказа  (необязательно)
@@ -80,7 +80,7 @@ function handleForm() {
       {
         onSuccess: async function (options) {
           // success
-          console.log("success");
+          console.log('onSuccess', options)
           const r = await fetch(
             `https://generous-tuesday.labado.bizml.ru/api/v1/donations/${donation.cloudPaymentsInvoiceId}/is-complete`,
             {
@@ -100,7 +100,7 @@ function handleForm() {
         },
         onFail: async function (reason, options) {
           // fail
-          console.log("fail");
+          console.log('onFail', reason, options)
           const r = await fetch(
             `https://generous-tuesday.labado.bizml.ru/api/v1/donations/${donation.cloudPaymentsInvoiceId}/is-complete`,
             {
@@ -119,7 +119,7 @@ function handleForm() {
           window.location.href = "/pages/form.html";
         },
         onComplete: function (paymentResult, options) {
-          console.log("complete");
+          console.log('onComplete', paymentResult, options)
         },
       }
     );
