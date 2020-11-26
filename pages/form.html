@@ -41,7 +41,7 @@
     <div class="bg-wrapper">
       <header class="flex flex-between">
         <div class="about">
-          <a href="#" class="color-blue big-text bold"
+          <a href="#popup" class="color-blue big-text bold"
             >Что такое<br />#ЩедрыйВторник?</a
           >
         </div>
@@ -64,7 +64,7 @@
               /></a>
             </div>
             <div class="mobile-menu_content">
-              <a href="#" class="color-blue big-text bold"
+              <a href="#popup" class="color-blue big-text bold js-close-menu"
                 >Что такое<br />#ЩедрыйВторник?</a
               >
               <br /><br /><br /><br />
@@ -249,6 +249,38 @@
         </div>
       </footer>
     </div>
+
+    <div id="popup" class="popup">
+			<a href="#header" class="popup-area"></a>		
+			<div class="popup-body">
+				<div class="popup-container">
+					<div class="popup-box">
+						<div class="popup-title form__title">Что такое<br>#ЩедрыйВторник?</div>
+						<div class="popup-text">
+							#ЩедрыйВторник — это Международный
+							день благотворительности, который проходит более чем в 100 странах мира с 2012 года.
+							<br><br>
+							В этот день миллионы людей объединяются
+							для того, чтобы участвовать в благотворительных акциях и рассказывать об этом в соцсетях.
+							Потому что важно не только оказывать помощь, но и делиться с окружающими информацией
+							о том, какое это хорошее и нужное дело.
+							<br><br>
+							<strong>Давайте делать добрые дела <span class="color-red">вместе и вслух!</span></strong>
+						</div>
+					</div>
+					<svg id="popup-svg" viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+						<clipPath   id="popupMask" >
+							<path height="580" d="M38.6754 56.3445C42.9505 46.0385 50.2454 37.3551 60.5563 33.092C156.646 -6.63677 524.199 -15.4903 749.182 33.84C768.419 38.0579 784.796 50.7403 791.604 69.22C836.087 189.962 819.529 401.756 790.418 529.003C784.369 555.442 762.114 574.516 735.057 576.399C597.385 585.979 334.25 573.582 91.7626 572.062C63.798 571.887 38.1474 555.396 29.8733 528.683C-17.552 375.57 -3.91988 159.029 38.6754 56.3445Z" fill="white"/>
+						</clipPath>
+						<g clip-path="url(#popupMask)">
+							<image xlink:href="../images/cloud-4.jpg" x="0" y="0"/>
+							<image class="popup-image" xlink:href="../images/popup-boy.png" x="500" y="0" width="334" preserveAspectRatio="xMidYMid"/>
+						</g>
+					</svg>
+					<a class="popup-close" href="#header"><img class="popup-close__image" src="../images/Vector.png" alt=""></a>
+				</div>
+			</div>
+		</div>
 
     <script src="../heart.js"></script>
     <script src="../script.js"></script>

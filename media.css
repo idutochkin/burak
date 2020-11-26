@@ -134,7 +134,8 @@
 		font-size: 20px;
 		line-height: 26px;
 	}
-	.heart-h2 {		
+	.heart-h2 {
+		font-weight: bold;
 		font-size: 16px;
 		line-height: 20.8px;
 	}	
@@ -240,6 +241,7 @@
 	}
 	.join-block {
 		height: 280px;
+		margin-right: -25px;
 	}
 	.girl {
 		height: 240px;
