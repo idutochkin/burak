@@ -114,7 +114,7 @@ a:hover {
     font-size: 30px;
     line-height: 39px;
 	margin-top: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 	font-family: 'Zhizn';
 	display: inline-block;
 }
@@ -266,6 +266,7 @@ footer {
     opacity: 0.7;
 }
 
+/* Join us button animation */
 .btn-text {
     position: absolute;
     top: 0;
@@ -274,10 +275,10 @@ footer {
     bottom: 0;
 
     font-family: 'Cera Round Pro', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      color: #F73E49;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #F73E49;
 
     display: flex;
     align-items: center;
@@ -285,43 +286,70 @@ footer {
 
     transition: color 0.3s linear;
   }
-
   .round-inner {
     transition: transform 0.3s linear;
     transform: translateX(-200px);
     fill: #F73E49;
   }
-
   .container:hover .round-inner {
     transform: translateX(0);
   }
-
   .container:hover .btn-text {
     color: #fff;
   }
-
   .container {
     cursor: pointer;
-
     position: relative;
     width: 185px;
     height: 57px;
-
-
   }
-
-  /* .round-inner {
-    transfo
-  } */
-
   #main-svg {
     width: 185px;
     height: 57px;
   }
+/* Join us button animation END */
+
+/* Offer animation */
+.offer-text {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+  /*   bottom: 0; */    
+    font-family: 'Cera Round Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #444448;    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: color 0.3s linear;
+    opacity: 0.7;
+}  
+.round-inner-offer {
+    transition: transform 0.3s linear;
+    transform: translateX(-400px);
+    fill: #444448;
+}  
+  .container-offer:hover .round-inner-offer {
+    transform: translateX(0);
+  }  
+  .container-offer {
+    cursor: pointer;    
+    position: relative;
+    width: 408px;
+    margin-top: 10px;
+  }  
+  #offer-svg {
+    width: 100%;
+  }
+/* Offer animation END*/
+
+/* Popup */
 #popup-svg {
     width: 100%;
 }
-  
 .popup {
     position: fixed;
     width: 100%;
@@ -377,6 +405,7 @@ footer {
     margin-top: 15px;
     margin-bottom: 15px !important;
 }
+/* Popup END */
 
 /* FORM PAGE style */
 .form{

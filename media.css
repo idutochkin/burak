@@ -95,6 +95,22 @@
   /* A mobile version for all devices that is smaller than the smalles iPad */
 }
 
+@media (max-width: 900px) {	
+	footer.flex.flex-between {
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-top: 100px;
+	}	
+	.iskra-studio {
+		margin-top: 25px;
+	}
+	.container-offer {
+		width: auto;
+	}
+}
+
 @media (max-width: 767px) {	
 	.cloud-1 {
 		background-image: url(images/cloud-1-m.png);
@@ -165,10 +181,6 @@
 		width: 100%;
 		text-align: center;
 		margin-top: 100px;
-	}
-	.iskra-studio {
-		justify-content: center;
-		margin-top: 25px;
 	}
 	.join-block {
 		margin: 75px auto 100px;
