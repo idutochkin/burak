@@ -10,26 +10,31 @@ var shuffle = (array) => {
 }
 var renderHeart = (imagesSrc) => {
 	if(imagesSrc.length > 0) {
-		shuffle(imagesSrc);
-
-		imagesSrc.forEach((src, index) => {
-			let squareEmpty = document.querySelector(".heart-block .square:not([data-not-empty])");
-			if(squareEmpty == null)
-				return;
+		let squareEmpty = document.querySelector(".heart-block .square:not([data-not-empty])");
+		if(squareEmpty == null) {
+			let squares = document.querySelectorAll(".heart-block .square");
+			let changeSquare = squares[randomInteger(0, squares.length - 2)];			
+			let img = document.createElement("img");				
+			img.setAttribute("src", imagesSrc[randomInteger(0, imagesSrc.length - 2)]);
 			
-			let img = document.createElement("img");
+			changeSquare.classList.add("rendering");
+			changeSquare.replaceChild(img, changeSquare.children[0]);
+			setTimeout(() => changeSquare.classList.remove("rendering"), 200);
+		} else {
+			shuffle(imagesSrc);
 			
-			img.setAttribute("src", src);
-			if(squareEmpty.children.length > 0)
-				squareEmpty.replaceChild(img, squareEmpty.children[0]);
-			else			
+			imagesSrc.forEach((src, index) => {
+				squareEmpty = document.querySelector(".heart-block .square:not([data-not-empty])");
+				if(squareEmpty == null)
+					return;
+					
+				let img = document.createElement("img");				
+				img.setAttribute("src", src);
 				squareEmpty.appendChild(img);
-			squareEmpty.dataset.notEmpty = "y";
-		});
+				squareEmpty.dataset.notEmpty = "y";
+			});
+		}
 	}
-	document.querySelectorAll(".heart-block .square").forEach((node, index) => {
-		node.removeAttribute("data-not-empty");
-	});
 }
 
 var imagesSrc = [];
@@ -87,7 +92,7 @@ fetch("https://generous-tuesday.labado.bizml.ru/api/v1/donation-photos").then(re
     setTimeout(() => {
 		renderHeart(imagesSrc);
 		loopHeart();
-	}, randomInteger(5000, 20000));
+	}, 5000/*randomInteger(5000, 20000)*/);
 }());
 document.querySelectorAll(".js-reloadHeart").forEach((node, index) => node.addEventListener("click", (event) => {
 	event.preventDefault();
