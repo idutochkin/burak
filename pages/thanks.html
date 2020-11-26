@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../images/favicon.svg"
-    />
-    <link
-      rel="preload"
-      href="fonts/CeraPro-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/CeraPro-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/Zhizn.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../media.css" />
-
-    <title>Сердце щедрого вторника | Дорога жизни</title>
-  </head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
+		<link rel="preload" href="fonts/CeraPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/CeraPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/Zhizn.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../media.css">
+		<link rel="stylesheet" href="../heart.css">
+		
+		<title>Сердце щедрого вторника | Дорога жизни</title>
+	</head>
   <body>
-    <div class="bg form__cloud1"></div>
-    <div class="bg form__cloud2"></div>
+    <div class="bg  thanks__cloud"></div>
+    <div class="bg thanks__cloud-bottom"></div>
     <div class="overlay"></div>
     <div class="bg-wrapper">
       <header class="flex flex-between">
@@ -104,27 +83,33 @@
         </div>
         <div class="thanks__column thanks__column_right">
           <img src="../images/sun.png" class="thanks__sun" />
-          <div id="thanks">
-            
-            <div class="thanks__submit-block">
-              <button type="submit" class="thanks__submit">Загрузить фото</button>
+          <span class="thanks__title">Спасибо за помощь :)</span>
+          <span class="thanks__text"
+            >Загрузите своё фото в общее Сердце. Вместе мы сделаем мир
+            лучше</span
+          >
+          <form id="thanks" enctype="multipart/form-data">
+            <label class="thanks__submit-block">
+              <span class="thanks__submit">Загрузить фото</span>
+              <input type="file" style="display: none" name="url"/>
               <svg
                 class="thanks__submit-bg"
-                width="351"
+                width="303"
                 height="57"
-                viewBox="0 0 351 57"
+                viewBox="0 0 303 57"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M322.214 7.37201C231.819 4.43108 53.2886 0.509834 14.1873 15.3621C-3.65995 22.1413 -12.2475 53.4465 47.8648 53.4465C102.427 53.4465 255.07 59.1919 306.847 53.4465C323.234 51.6281 352.811 48.8092 349.784 30.4093C347.769 18.1554 340.745 14.7243 255.322 1"
+                  d="M24.8848 7.37201C102.588 4.43108 256.053 0.509834 289.664 15.3621C305.006 22.1413 312.388 53.4465 260.715 53.4465C213.813 53.4465 82.6013 59.1919 38.0944 53.4465C24.0078 51.6281 -1.41641 48.8092 1.18526 30.4093C2.91791 18.1554 8.95578 14.7243 82.3854 1"
                   stroke="#376EB3"
                   stroke-width="2"
                   stroke-linecap="round"
                 />
               </svg>
-            </div>
+            </label>
           </form>
+          <a href="photo-share.html" class="thanks__link">Пропустить</a>
         </div>
       </main>
       <footer class="flex flex-between">
@@ -144,6 +129,6 @@
 
     <script src="../heart.js"></script>
     <script src="../script.js"></script>
-    <script src="../script-form.js"></script>
+    <script src="../scripts/thanks.js"></script>
   </body>
 </html>

@@ -10,6 +10,12 @@ var hideElement = (selector) => {
 		document.querySelector(selector).style.display = "none";
 	}, 250);
 };
+var secondPause = function(e) {
+	e.preventDefault();
+	setTimeout(() => {
+		window.location = this.href
+	}, 1000);
+}
 
 document.querySelectorAll(".js-open-menu").forEach((node, index) => {
 	node.addEventListener("click", (event) => {
@@ -28,4 +34,7 @@ document.querySelectorAll(".overlay").forEach((node, index) => {
 		hideElement(".overlay");
 		hideElement(".mobile-menu_wrapper");
 	});
+});
+document.querySelectorAll(".js-second-pause").forEach((node) => {
+	node.addEventListener("click", secondPause);
 });
