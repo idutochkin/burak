@@ -636,6 +636,16 @@ input[type=number] {
     line-height: 130%;
     letter-spacing: 0.02em;
     color: #376EB3;
+    text-align: center;
+}
+.thanks__text{
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 321px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #444448;
 }
 .thanks__column {
     width: 50%;
@@ -644,7 +654,7 @@ input[type=number] {
 }
 .thanks__column_right {
     max-width: 400px;
-    padding: 85px 77px 85px 107px;
+    padding: 82px 114px 82px 127px;
     margin-left: 40px;
     background: url(images/bg-form3-2.png) no-repeat center center /100% 100%;
 }
@@ -653,10 +663,13 @@ input[type=number] {
     max-width: 100%;
 }
 .thanks__sun {
-    margin-bottom: 40px;
+    display: block;
+    margin:0 auto 40px;
+    max-width: 100%;
 }
 .thanks__submit-block {
-    margin-top: 40px;
+    display: block;
+    margin: 0 auto 15px;
     position: relative;
 }
 .thanks__submit-bg {
@@ -682,6 +695,22 @@ input[type=number] {
     color: #376EB3;
     cursor: pointer;
 }
+.thanks__link {
+    display: block;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #444448; 
+    
+}
+.thanks__link:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: url(./images/shtrih.svg) no-repeat center center;
+}
+
 /*---GALLERY PAGE---START*/
 
 .gallery {

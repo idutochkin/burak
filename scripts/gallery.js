@@ -121,6 +121,79 @@ function chunk(arr, size) {
 }
 
 function fetchGalleryItems(){
+  const galleryItems = [
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр",
+      photoUrl: "img/gal-1.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр2",
+      photoUrl: "img/gal-2.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр3",
+      photoUrl: "img/gal-3.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр4",
+      photoUrl: "img/gal-4.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр5",
+      photoUrl: "img/gal-5.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр6",
+      photoUrl: "img/gal-6.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр7",
+      photoUrl: "img/gal-7.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр8",
+      photoUrl: "img/gal-8.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр9",
+      photoUrl: "img/gal-9.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр10",
+      photoUrl: "img/gal-1.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр11",
+      photoUrl: "img/gal-1.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр12",
+      photoUrl: "img/gal-1.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр13",
+      photoUrl: "img/gal-1.jpeg"
+    },
+    {
+      id: new Date().toISOString(),
+      fullName: "Александр14",
+      photoUrl: "img/gal-1.jpeg"
+    },
+  ];
+
     renderGallery(galleryItems)
 
     // request("donations")
@@ -130,76 +203,3 @@ function fetchGalleryItems(){
     //     console.log(error);
     //   });
 }
-
-const galleryItems = [
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр",
-    photoUrl: "img/gal-1.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр2",
-    photoUrl: "img/gal-2.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр3",
-    photoUrl: "img/gal-3.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр4",
-    photoUrl: "img/gal-4.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр5",
-    photoUrl: "img/gal-5.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр6",
-    photoUrl: "img/gal-6.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр7",
-    photoUrl: "img/gal-7.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр8",
-    photoUrl: "img/gal-8.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр9",
-    photoUrl: "img/gal-9.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр10",
-    photoUrl: "img/gal-1.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр11",
-    photoUrl: "img/gal-1.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр12",
-    photoUrl: "img/gal-1.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр13",
-    photoUrl: "img/gal-1.jpeg"
-  },
-  {
-    id: new Date().toISOString(),
-    fullName: "Александр14",
-    photoUrl: "img/gal-1.jpeg"
-  },
-];
