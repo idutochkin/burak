@@ -70,6 +70,9 @@ function handleForm() {
     )
       .then((response) => response.json())
       .catch((err) => console.log(err));
+      
+    localStorage.setItem('generousId', donation.cloudPaymentsInvoiceId) 
+    localStorage.setItem('generousKey', donation.key) 
 
     const widget = new cp.CloudPayments();
     widget.pay(
