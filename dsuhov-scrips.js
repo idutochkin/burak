@@ -1,1 +1,3 @@
-window.document.addEventListener("DOMContentLoaded", function () {});
+window.document.addEventListener("DOMContentLoaded", function () {
+  console.log(";sdf");
+});
