@@ -95,6 +95,22 @@
   /* A mobile version for all devices that is smaller than the smalles iPad */
 }
 
+@media (max-width: 900px) {	
+	footer.flex.flex-between {
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-top: 100px;
+	}	
+	.iskra-studio {
+		margin-top: 25px;
+	}
+	.container-offer {
+		width: auto;
+	}
+}
+
 @media (max-width: 767px) {	
 	.cloud-1 {
 		background-image: url(images/cloud-1-m.png);
@@ -134,7 +150,8 @@
 		font-size: 20px;
 		line-height: 26px;
 	}
-	.heart-h2 {		
+	.heart-h2 {
+		font-weight: bold;
 		font-size: 16px;
 		line-height: 20.8px;
 	}	
@@ -164,10 +181,6 @@
 		width: 100%;
 		text-align: center;
 		margin-top: 100px;
-	}
-	.iskra-studio {
-		justify-content: center;
-		margin-top: 25px;
 	}
 	.join-block {
 		margin: 75px auto 100px;
@@ -240,6 +253,7 @@
 	}
 	.join-block {
 		height: 280px;
+		margin-right: -25px;
 	}
 	.girl {
 		height: 240px;
@@ -254,9 +268,8 @@
 		flex-wrap: wrap;
 	}
 	.form__column_right{
-		padding: 0;
 		padding-bottom: 60px;
-		margin-bottom: 40px;
+		margin-bottom: 120px;
 		order: -1;
 	}
 	.form__column{
@@ -274,6 +287,12 @@
 }
 
 @media (max-width: 767px) {
+	.form {
+		margin-top: -50px;
+		margin-left: -15px;
+		margin-right: -15px;
+    background: url(images/bg-form3-mob.png) no-repeat center -40px /100% 55%;
+}
 	.form__title {
 		font-size: 20px;
 		line-height: 130%;
@@ -296,8 +315,15 @@
 	.form__submit-bg {
 		height: 45px;
 	}
+	.form__column_right {
+		background: none;
+		margin-left: 0;
+		padding: 70px 20px 20px;
 }
-
+	.form__text {
+		padding: 0 15px;
+	}
+}
 
 /*---GALLERY PAGE---START*/
 @media(max-width: 767px) {
@@ -415,3 +441,4 @@
 }
 
 /*---GALLERY PAGE---END*/
+

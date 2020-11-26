@@ -1,15 +1,15 @@
 .heart-block {position:relative}
-.heart-block .square {position:absolute;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;box-sizing: border-box;border:1px solid}
+.heart-block .square {position:absolute;display:grid;grid-template-columns:100%;grid-template-rows:100%;background:rgba(255,255,255,.5)}
 .heart-block .square:after {content:"";padding-bottom:100%}
 .heart-block img {width:100%;height:100%;display:block}
 
-.heart-block .square.x1 {width:5.5%;background:#f1f1f1}
-.heart-block .square.x2 {width:7%;background:#f1f1f1}
-.heart-block .square.x3 {width:8%;background:#f1f1f1}
-.heart-block .square.x4 {width:9.5%;background:#ccc}
-.heart-block .square.x5 {width:11.9%;background:#ccc}
-.heart-block .square.x6 {width:13.5%;background:#ccc}
-.heart-block .square.x7 {width:16%;background:#ccc}
+.heart-block .square.x1 {width:5.5%}
+.heart-block .square.x2 {width:7%}
+.heart-block .square.x3 {width:8%}
+.heart-block .square.x4 {width:9.5%}
+.heart-block .square.x5 {width:11.9%}
+.heart-block .square.x6 {width:13.5%}
+.heart-block .square.x7 {width:16%}
 
 /*left-top*/
 .heart-block .square:nth-child(1) {margin-top:0%;margin-left:32.5%}
