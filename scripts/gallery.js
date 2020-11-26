@@ -71,41 +71,26 @@ const galleryItems = [
   },
 ];
 
-const galleryContent = document.querySelector(".gallery__content");
+renderGallery();
 
-const galleryBoxes = chunk(galleryItems, 9);
+function renderGallery(){
+  const galleryContent = document.querySelector(".gallery__content");
+  const galleryBoxes = getGalleryBoxes(galleryItems);
+  
+  galleryBoxes.forEach(function(gItems, index){
+    let rowNum = getRowNum(gItems);
+    let rowHeight = getRowHeight();
 
-galleryBoxes.forEach(function(gItems, index){
-   let rowNum = 1;
-   if(gItems.length >= 3){
-     rowNum = 2
-   }
 
-   if(gItems.length >= 4 ){
-     rowNum = 3
-   }
+    const galleryBox = document.createElement('div');
+    galleryBox.classList.add("gallery__box");
+    galleryBox.style.gridTemplateRows = `repeat(${rowNum}, ${rowHeight})`;
+    galleryBox.accessKey = index.toString();
 
-   if(gItems.length >= 7){
-     rowNum = 4
-   }
+    gItems.forEach(function (gItem, index) {
+      let itemTextClass = getGalleryItemTextClass(index);
 
-   const galleryBox = document.createElement('div');
-   galleryBox.classList.add("gallery__box");
-   galleryBox.style.gridTemplateRows = `repeat(${rowNum}, 295px)`;
-   galleryBox.accessKey = index.toString();
-
-   gItems.forEach(function (gItem, index) {
-     let itemTextClass = "item__text--sm";
-
-     if((index + 1) === 3 || (index + 1) === 4){
-        itemTextClass = "item__text--lg";
-     }
-
-     if((index + 1) === 7 || (index + 1) === 8 || (index + 1) === 9){
-        itemTextClass = "item__text--md";
-     }
-
-     const galleryItem = `
+      const galleryItem = `
         <figure class="gallery__item gallery__item--${index + 1}">
             <div class="item__text ${itemTextClass}">
                 <span>${gItem.fullName}</span>
@@ -114,11 +99,71 @@ galleryBoxes.forEach(function(gItems, index){
         </figure>
      `;
 
-     galleryBox.innerHTML += galleryItem;
-   })
+      galleryBox.innerHTML += galleryItem;
+    })
 
-   galleryContent.appendChild(galleryBox);
-});
+    galleryContent.appendChild(galleryBox);
+  });
+}
+
+function getRowNum(galleryItems) {
+  if(document.documentElement.clientWidth <= 767){
+    return Math.ceil(galleryItems.length / 2)
+  }
+
+  let rowNum = 1;
+  if(galleryItems.length >= 3){
+    rowNum = 2
+  }
+
+  if(galleryItems.length >= 4 ){
+    rowNum = 3
+  }
+
+  if(galleryItems.length >= 7){
+    rowNum = 4
+  }
+
+  return rowNum
+}
+
+function getGalleryItemTextClass(index) {
+  let itemTextClass = "item__text--sm";
+
+  if(document.documentElement.clientWidth <= 767){
+    return itemTextClass
+  }
+
+  if((index + 1) === 3 || (index + 1) === 4){
+    itemTextClass = "item__text--lg";
+  }
+
+  if((index + 1) === 7 || (index + 1) === 8 || (index + 1) === 9){
+    itemTextClass = "item__text--md";
+  }
+
+  return itemTextClass;
+}
+
+
+function getRowHeight() {
+  if(document.documentElement.clientWidth <= 767){
+    return '139px'
+  }
+
+  return '295px'
+}
+
+function getGalleryBoxes(galleryItems) {
+  let galleryBoxes = []
+  if(document.documentElement.clientWidth <= 767){
+    galleryBoxes = chunk(galleryItems, 8);
+  } else {
+    galleryBoxes = chunk(galleryItems, 9);
+  }
+
+  return galleryBoxes;
+}
 
 
 function chunk(arr, size) {
