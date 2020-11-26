@@ -273,7 +273,7 @@
 		order: -1;
 	}
 	.form__column{
-		width: 100%;
+		width: auto;
 		max-width: 500px;
 		text-align: center;
 	}
@@ -294,6 +294,9 @@
 	.thanks__column_right {
 		display: block;
 		margin: 0 auto;
+	}
+	.form__cloud, .thanks__cloud {
+		background-size: 50% 50%;
 	}
 }
 
