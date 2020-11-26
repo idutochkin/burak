@@ -297,3 +297,121 @@
 		height: 45px;
 	}
 }
+
+
+/*---GALLERY PAGE---START*/
+@media(max-width: 767px) {
+	.gallery .gallery__title {
+		font-size: 20px;
+	}
+
+	.gallery .gallery__content .gallery__box {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 12px;
+		margin-top: 12px;
+	}
+
+	.gallery__item .item__text--sm {
+		width: 100.05%;
+		height: 50px;
+	}
+
+	.gallery__item .item__text > span {
+		font-size: 15px;
+	}
+
+	.gallery__item .item__text--sm > span{
+		top: 20px;
+	}
+
+	.gallery__item--1 {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 1;
+		border-color: #376EB3;
+		color: #376EB3;
+	}
+
+	.gallery__item--1 .item__text {
+		background-color: #E3EFFF;
+	}
+
+	.gallery__item--2 {
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+		border-color: #F73E49;
+		color: #F73E49;
+	}
+
+	.gallery__item--2 .item__text {
+		background-color: #FFE8EB;
+	}
+
+	.gallery__item--3 {
+		grid-row: 2 / span 1;
+		grid-column: 1 / span 1;
+		border-color: #F73E49;
+		color: #F73E49;
+	}
+
+	.gallery__item--3 .item__text {
+		background-color: #FFE8EB;
+	}
+
+	.gallery__item--4 {
+		grid-row: 2 / span 1;
+		grid-column: 2 / span 1;
+		border-color: #F73E49;
+		color: #F73E49;
+	}
+
+	.gallery__item--4 .item__text {
+		background-color: #FFE8EB;;
+	}
+
+	.gallery__item--5 {
+		grid-row: 3 / span 1;
+		grid-column: 1 / span 1;
+		border-color: #376EB3;
+		color: #376EB3;
+	}
+
+	.gallery__item--5 .item__text {
+		background-color: #E3EFFF;
+	}
+
+	.gallery__item--6 {
+		grid-row: 3 / span 1;
+		grid-column: 2 / span 1;
+		border-color: #376EB3;
+		color: #376EB3;
+	}
+
+	.gallery__item--6 .item__text {
+		background-color: #E3EFFF;;
+	}
+
+	.gallery__item--7 {
+		grid-row: 4 / span 1;
+		grid-column: 1 / span 1;
+		border-color: #F73E49;
+		color: #F73E49;
+	}
+
+	.gallery__item--7 .item__text {
+		background-color: #FFE8EB;;
+	}
+
+	.gallery__item--8 {
+		grid-row: 4 / span 1;
+		grid-column: 2 / span 1;
+		border-color: #F73E49;
+		color: #F73E49;
+	}
+
+	.gallery__item--8 .item__text {
+		background-color: #FFE8EB;;
+	}
+}
+
+/*---GALLERY PAGE---END*/
