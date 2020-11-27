@@ -4,15 +4,15 @@
 .heart-block .square.rendering img {opacity:0}
 .heart-block .square:after {content:"";padding-bottom:100%}
 .heart-block .square:hover {z-index:2;cursor:pointer;outline:2px solid rgb(253 216 219);transition:outline .25s ease}
-.heart-block img {width:100%;display:block}
+.heart-block img {width:100%;display:block; height: 100%; object-fit: cover;}
 
-.heart-block .square.x1 {width:5.5%}
-.heart-block .square.x2 {width:7%}
-.heart-block .square.x3 {width:8%}
-.heart-block .square.x4 {width:9.5%}
-.heart-block .square.x5 {width:11.9%}
-.heart-block .square.x6 {width:13.5%}
-.heart-block .square.x7 {width:16%}
+.heart-block .square.x1 {width: 28px; height: 28px;}
+.heart-block .square.x2 {width: 36px; height: 36px;}
+.heart-block .square.x3 {width: 42px; height: 42px;}
+.heart-block .square.x4 {width: 49px; height: 49px;}
+.heart-block .square.x5 {width: 60px; height: 60px;}
+.heart-block .square.x6 {width: 69px; height: 69px;}
+.heart-block .square.x7 {width: 82px; height: 82px;}
 
 /*left-top*/
 .heart-block .square:nth-child(1) {margin-top:0%;margin-left:32.5%}
@@ -70,4 +70,14 @@
 
 @media(max-width:756px) {
 	.popupImage_inner img {max-width:90%}
+}
+
+@media (max-width: 767px) {
+	.heart-block .square.x1 {width: 21px; height: 21px;}
+	.heart-block .square.x2 {width: 27px; height: 27px;}
+	.heart-block .square.x3 {width: 31px; height: 31px;}
+	.heart-block .square.x4 {width: 36px; height: 36px;}
+	.heart-block .square.x5 {width: 46px; height: 46px;}
+	.heart-block .square.x6 {width: 51px; height: 51px;}
+	.heart-block .square.x7 {width: 61px; height: 61px;}
 }
