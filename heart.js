@@ -38,7 +38,7 @@ var renderHeart = (imagesSrc) => {
 }
 
 var imagesSrc = [];
-fetch("https://generous-tuesday.labado.bizml.ru/api/v1/donation-photos").then(response => response.json()).then(json => {console.log(json);
+fetch("https://generous-tuesday.labado.bizml.ru/api/v1/donation-photos").then(response => response.json()).then(json => {
 	imagesSrc = json;
 	renderHeart(imagesSrc);
 });
