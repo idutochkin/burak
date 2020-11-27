@@ -39,29 +39,30 @@ var renderHeart = (imagesSrc) => {
 
 var imagesSrc = [];
 fetch("https://generous-tuesday.labado.bizml.ru/api/v1/donation-photos").then(response => response.json()).then(json => {
-	imagesSrc = json; imagesSrc = [
-	"upload/1.jpg",
-	"upload/1.jpg",
-	"upload/3.jpg",
-	"upload/4.jpg",
-	"upload/5.jpg",
-	"upload/6.jpg",
-	"upload/7.jpg",
-	"upload/8.jpg",
-	"upload/9.jpg",
-	"upload/10.jpg",
-	"upload/11.jpg",
-	"upload/12.jpg",
-	"upload/13.jpg",
-	"upload/14.jpg",
-	"upload/15.svg",
-	"upload/16.svg",
-	"upload/17.svg",
-	"upload/18.svg",
-	"upload/19.svg",
-	"upload/20.svg",
-	"upload/21.svg",
-];
+	imagesSrc = json;
+	// imagesSrc = [
+	// "upload/1.jpg",
+	// "upload/1.jpg",
+	// "upload/3.jpg",
+	// "upload/4.jpg",
+	// "upload/5.jpg",
+	// "upload/6.jpg",
+	// "upload/7.jpg",
+	// "upload/8.jpg",
+	// "upload/9.jpg",
+	// "upload/10.jpg",
+	// "upload/11.jpg",
+	// "upload/12.jpg",
+	// "upload/13.jpg",
+	// "upload/14.jpg",
+	// "upload/15.svg",
+	// "upload/16.svg",
+	// "upload/17.svg",
+	// "upload/18.svg",
+	// "upload/19.svg",
+	// "upload/20.svg",
+	// "upload/21.svg",
+// ];
 	renderHeart(imagesSrc);
 });
 
