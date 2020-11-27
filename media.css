@@ -299,7 +299,11 @@
 		background-size: 50% 50%;
 	}
 }
-
+@media (max-width: 1024px) {
+	.form__checkbox-container {
+		width: 147px;
+	}
+}
 @media (max-width: 767px) {
 	.form {
 		margin-top: -50px;
