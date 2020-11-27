@@ -783,12 +783,12 @@ input[type=number] {
 }
 
 .gallery__item .item__text--md {
-    width: 70%;
+    width: 75%;
     height: 130px;
 }
 
 .gallery__item .item__text--lg {
-    width: 60%;
+    width: 65%;
     height: 150px;
 }
 
