@@ -3,6 +3,36 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
+
+    <meta
+      property="og:title"
+      content="Сердце щедрого вторника | Дорога жизни"
+    />
+    <meta
+      property="og:description"
+      content="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
+    />
+
+    <meta property="og:image" content="/images/ds_images/shareimg2.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@Сердце щедрого вторника" />
+    <meta property="twitter:title" content="Сердце щедрого вторника" />
+
+    <meta
+      property="twitter:description"
+      content="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
+    />
+    <meta property="twitter:image" content="/images/ds_images/shareimg1.jpg" />
+    <meta
+      property="twitter:image:src"
+      content="/images/ds_images/shareimg1.jpg"
+    />
+    <meta property="twitter:image:width" content="432" />
+    <meta property="twitter:image:height" content="432" />
+
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.svg" />
     <link
       rel="preload"
@@ -119,14 +149,9 @@
                 <ul class="ds_share-links">
                   <li class="ds_share-links__link">
                     <a
-                      class="ds_share-link"
                       href="#"
-                      title="vkontakte"
-                      data-sharer="vk"
-                      data-caption="Расскажите друзьям
-                    о Щедром вторнике!"
-                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
-                      data-url="https://generous-tuesday.labado.bizml.ru/"
+                      data-type="vk"
+                      class="ds_share-link social_share"
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -138,12 +163,10 @@
                   </li>
                   <li class="ds_share-links__link">
                     <a
-                      class="ds_share-link"
+                      class="ds_share-link social_share"
                       href="#"
                       title="facebook"
-                      data-sharer="facebook"
-                      data-hashtag="#ЩедрыйВторник"
-                      data-url="https://generous-tuesday.labado.bizml.ru/"
+                      data-type="fb"
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -156,15 +179,7 @@
                     </a>
                   </li>
                   <li class="ds_share-links__link">
-                    <a
-                      href="#"
-                      class="ds_share-link"
-                      title="twitter"
-                      data-sharer="twitter"
-                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
-                      data-hashtags="ЩедрыйВторник"
-                      data-url="https://generous-tuesday.labado.bizml.ru/"
-                    >
+                    <a class="ds_share-link social_share" data-type="twitter">
                       <svg
                         class="ds_share-link__svg"
                         xmlns="http://www.w3.org/2000/svg"
@@ -177,12 +192,10 @@
                   </li>
                   <li class="ds_share-links__link">
                     <a
-                      class="ds_share-link"
+                      class="ds_share-link social_share"
                       href="#"
                       title="odnoklassniki"
-                      data-sharer="okru"
-                      data-url="https://generous-tuesday.labado.bizml.ru/"
-                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
+                      data-type="ok"
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -194,7 +207,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="ds_cont__download-btn ds_download-btn">
+              <a href="#" class="ds_cont__download-btn ds_download-btn">
                 <div class="ds_download-btn__text">Скачать</div>
                 <svg
                   id="shp-downl-btn-svg"
@@ -260,7 +273,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-              </button>
+              </a>
               <button class="ds_cont__skip-btn">
                 <a
                   href="/"
@@ -340,7 +353,8 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script> -->
+    <script src="/scripts/jsshare.js"></script>
     <script src="/script.js"></script>
     <script src="/dsuhov-scrips.js"></script>
   </body>

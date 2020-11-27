@@ -113,11 +113,11 @@
 
 @media (max-width: 767px) {	
 	.cloud-1 {
-		background-image: url(images/cloud-1-m.png);
+		background-image: url(images/new_cloud-1-m.png);
 		background-size: contain;
 	}
 	.cloud-2 {
-		background-image: url(images/cloud-2-m.png);
+		background-image: url(images/new_cloud-2-m.png);
 	}
 	.about, .contacts {
 		display: none;
