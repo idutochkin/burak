@@ -148,10 +148,14 @@
               <div class="ds_cont__share-links">
                 <ul class="ds_share-links">
                   <li class="ds_share-links__link">
-                    <a
-                      href="#"
-                      data-type="vk"
-                      class="ds_share-link social_share"
+                    <button
+                      class="ds_share-link"
+                      title="vkontakte"
+                      data-sharer="vk"
+                      data-caption="Расскажите друзьям
+                    о Щедром вторнике!"
+                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
+                      data-url="https://generous-tuesday.labado.bizml.ru/"
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -159,14 +163,15 @@
                       >
                         <use xlink:href="/images/ds_images/soc-sprite.svg#vk" />
                       </svg>
-                    </a>
+                    </button>
                   </li>
                   <li class="ds_share-links__link">
-                    <a
-                      class="ds_share-link social_share"
-                      href="#"
+                    <button
+                      class="ds_share-link"
                       title="facebook"
-                      data-type="fb"
+                      data-sharer="facebook"
+                      data-hashtag="#ЩедрыйВторник"
+                      data-url="https://generous-tuesday.labado.bizml.ru/"
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -176,10 +181,17 @@
                           xlink:href="/images/ds_images/soc-sprite.svg#facebook"
                         />
                       </svg>
-                    </a>
+                    </button>
                   </li>
                   <li class="ds_share-links__link">
-                    <a class="ds_share-link social_share" data-type="twitter">
+                    <button
+                      class="ds_share-link"
+                      title="twitter"
+                      data-sharer="twitter"
+                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
+                      data-hashtags="ЩедрыйВторник"
+                      data-url="https://generous-tuesday.labado.bizml.ru"
+                    >
                       <svg
                         class="ds_share-link__svg"
                         xmlns="http://www.w3.org/2000/svg"
@@ -188,14 +200,15 @@
                           xlink:href="/images/ds_images/soc-sprite.svg#twitter"
                         />
                       </svg>
-                    </a>
+                    </button>
                   </li>
                   <li class="ds_share-links__link">
-                    <a
-                      class="ds_share-link social_share"
-                      href="#"
+                    <button
+                      class="ds_share-link"
                       title="odnoklassniki"
-                      data-type="ok"
+                      data-sharer="okru"
+                      data-url="https://generous-tuesday.labado.bizml.ru/"
+                      data-title="#ЩедрыйВторник — это Международный день благотворительности, который проходит более чем в 100 странах мира с 2012 года."
                     >
                       <svg
                         class="ds_share-link__svg"
@@ -203,7 +216,7 @@
                       >
                         <use xlink:href="/images/ds_images/soc-sprite.svg#OK" />
                       </svg>
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -353,8 +366,7 @@
         </div>
       </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script> -->
-    <script src="/scripts/jsshare.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
     <script src="/script.js"></script>
     <script src="/dsuhov-scrips.js"></script>
   </body>
