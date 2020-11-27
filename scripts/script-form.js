@@ -24,6 +24,7 @@ function handleForm() {
       if (item.checked) {
         otherAmount.value = "";
         clearText(otherAmount);
+        otherAmount.removeAttribute('required')
       }
     });
   });
