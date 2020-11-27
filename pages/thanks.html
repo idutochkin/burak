@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8" />
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
-		<link rel="preload" href="fonts/CeraPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="fonts/CeraPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="fonts/Zhizn.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="../style.css">
-		<link rel="stylesheet" href="../media.css">
-		<link rel="stylesheet" href="../heart.css">
-		
-		<title>Сердце щедрого вторника | Дорога жизни</title>
-	</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
+    <link
+      rel="preload"
+      href="fonts/CeraPro-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/CeraPro-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Zhizn.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../media.css" />
+    <link rel="stylesheet" href="../heart.css" />
+
+    <title>Сердце щедрого вторника | Дорога жизни</title>
+  </head>
   <body>
-    <div class="bg  thanks__cloud"></div>
+    <div class="bg thanks__cloud"></div>
     <div class="bg thanks__cloud-bottom"></div>
     <div class="overlay"></div>
     <div class="bg-wrapper">
@@ -91,7 +109,7 @@
           <form id="thanks" enctype="multipart/form-data">
             <label class="thanks__submit-block">
               <span class="thanks__submit">Загрузить фото</span>
-              <input type="file" style="display: none" name="url"/>
+              <input type="file" style="display: none" name="url" />
               <svg
                 class="thanks__submit-bg"
                 width="303"
@@ -109,28 +127,73 @@
               </svg>
             </label>
           </form>
-          <a href="photo-share.html" class="thanks__link">Пропустить</a>
+          <div class="container-offer thanks__link">
+            <a href="photo-share.html" class="offer-text">Пропустить</a>
+            <svg
+              id="thanks-svg"
+              height="4"
+              viewBox="0 0 93 4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <clipPath id="thanksofferMask" height="4">
+                <path
+                  height="4"
+                  d="M1 1C30.6111 1 90.2667 1.4 92 3"
+                  stroke="#376EB3"
+                  stroke-linecap="round"
+                />
+              </clipPath>
+              <g clip-path="url(#thanksofferMask)">
+                <path
+                  width="90"
+                  height="4"
+                  class="round-inner-offer"
+                  d="M1 1C30.6111 1 90.2667 1.4 92 3"
+                  stroke="#376EB3"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
       </main>
       <footer class="flex flex-between">
-
         <div>
-					<div class="container-offer">
-						<a href="https://doroga-zhizni.org/upload_files/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D1%8B.pdf" class="offer-text">
-							Публичная оферта о добровольном пожертвовании
-						</a>
-						
-						<svg id="offer-svg" height="4" viewBox="0 0 408 4" xmlns="http://www.w3.org/2000/svg" >
-							<clipPath   id="offerMask" height="4">
-								<path height="4" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
-							</clipPath>
-							<g clip-path="url(#offerMask)">
-								<path width="400" height="4" class="round-inner-offer" d="M407 1C274.889 1 8.73332 1.4 0.999987 3" stroke="#376EB3" stroke-linecap="round"/>
-							</g>
-						</svg>
-						
-					</div>
-				</div>
+          <div class="container-offer">
+            <a
+              href="https://doroga-zhizni.org/upload_files/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D1%8B.pdf"
+              class="offer-text"
+            >
+              Публичная оферта о добровольном пожертвовании
+            </a>
+
+            <svg
+              id="offer-svg"
+              height="4"
+              viewBox="0 0 408 4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <clipPath id="offerMask" height="4">
+                <path
+                  height="4"
+                  d="M407 1C274.889 1 8.73332 1.4 0.999987 3"
+                  stroke="#376EB3"
+                  stroke-linecap="round"
+                />
+              </clipPath>
+              <g clip-path="url(#offerMask)">
+                <path
+                  width="400"
+                  height="4"
+                  class="round-inner-offer"
+                  d="M407 1C274.889 1 8.73332 1.4 0.999987 3"
+                  stroke="#376EB3"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
 
         <!-- <div class="copyright flex flex-column gap10">
           <a
@@ -141,7 +204,7 @@
           >
         </div> -->
         <!-- <div class="iskra-studio flex flex_items-center gap25"> -->
-          <div class="color-blue">&copy; «Дорога Жизни» 2020 г.</div>
+        <div class="color-blue">&copy; «Дорога Жизни» 2020 г.</div>
         <!-- </div> -->
       </footer>
     </div>

@@ -6,6 +6,7 @@ const amount = form.querySelectorAll('[type="radio"]');
 const otherAmount = form.querySelector('[type="number"]');
 const email = form.querySelector('[type="email"]');
 const submit = form.querySelector('[type="submit"]');
+const check = form.querySelector('[type="checkbox"]');
 
 function clearText(node) {
   const text = node.nextElementSibling;
@@ -48,7 +49,11 @@ function handleForm() {
   }
 
   submit.addEventListener("click", function (e) {
-    if (email.value && name.value && (otherAmount.value || getAmount())) {
+    
+    if(!otherAmount.value && !getAmount()){
+      otherAmount.setAttribute('required', true)
+    }
+    if (email.value && name.value && check.checked && (otherAmount.value || !!getAmount())) {
       e.preventDefault();
       pay();
     }

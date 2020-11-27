@@ -569,6 +569,9 @@ footer {
     left: 3px;
 }
 .form__checkbox-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-weight: normal;
     font-size: 16px;
     line-height: 130%;
@@ -576,10 +579,16 @@ footer {
     opacity: 0.5;
 }
 .form__checkbox-link{
-    border-bottom: 1px solid transparent;
-    transition: 0.3s;
+    display: inline;
+    font-family: 'CeraPro-Regular';
+    color: #444448;
+    opacity: 1;
 }
-
+.form__checkbox-container{
+    width: 147px;
+    margin-left: 4px;
+    margin-top: 12px;
+}
 .form__submit-block {
     margin-top: 40px;
     position: relative;
@@ -698,18 +707,15 @@ input[type=number] {
 }
 .thanks__link {
     display: block;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 130%;
     text-align: center;
     color: #444448; 
     
 }
-.thanks__link:after {
-    content: '';
-    display: block;
-    height: 2px;
+#thanks-svg {
     width: 100%;
-    background: url(./images/shtrih.svg) no-repeat center center;
 }
 
 /*---GALLERY PAGE---START*/
